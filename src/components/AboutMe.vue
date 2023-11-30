@@ -19,7 +19,7 @@
   </section>
 
   <section class="dark:text-white text-black mt-5">
-    <h1 class="text-3xl font-semibold">About me</h1>
+    <h1 class="text-2xl font-bold">About me</h1>
     <p class="mt-2">
       Hey there! I'm Fred from Costa Rica, on a mission to create and deliver
       technology-advancing projects and products that make a positive impact on
