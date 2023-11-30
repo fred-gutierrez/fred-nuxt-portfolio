@@ -1,0 +1,4 @@
+<template>
+  <AboutMe />
+  <Skills />
+</template>
