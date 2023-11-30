@@ -1,17 +1,17 @@
-import SassLogo from "@/images/skills/frontend/sass-logo.webp";
-import TypeScriptLogo from "@/images/skills/frontend/typescript.svg";
-import BootstrapLogo from "@/images/skills/frontend/bootstrap-logo.svg";
-import TailwindLogo from "@/images/skills/frontend/tailwind-logo.webp";
-import WordPressLogo from "@/images/skills/frontend/wordpress-logo.svg";
-import GreenSockLogo from "@/images/skills/frontend/gsap-greensock.svg";
-import PostCSSLogo from "@/images/skills/frontend/postcss-logo.png";
-import vueLogo from "@/images/skills/frontend/vuelogo.png";
-import htmlLogo from "@/images/skills/frontend/html-logo.png";
-import cssLogo from "@/images/skills/frontend/css-logo.png";
-import javascriptLogo from "@/images/skills/frontend/javascript-logo.png";
-import styledComponentsLogo from "@/images/skills/other/styled_c-logo.png";
-import svelteLogo from "@/images/skills/other/svelte-logo.png";
-import nextjsLogo from "@/images/skills/frontend/next-js-icon.png";
+import SassLogo from "@/assets/images/skills/frontend/sass-logo.webp";
+import TypeScriptLogo from "@/assets/images/skills/frontend/typescript.svg";
+import BootstrapLogo from "@/assets/images/skills/frontend/bootstrap-logo.svg";
+import TailwindLogo from "@/assets/images/skills/frontend/tailwind-logo.webp";
+import WordPressLogo from "@/assets/images/skills/frontend/wordpress-logo.svg";
+import GreenSockLogo from "@/assets/images/skills/frontend/gsap-greensock.svg";
+import PostCSSLogo from "@/assets/images/skills/frontend/postcss-logo.png";
+import vueLogo from "@/assets/images/skills/frontend/vuelogo.png";
+import htmlLogo from "@/assets/images/skills/frontend/html-logo.png";
+import cssLogo from "@/assets/images/skills/frontend/css-logo.png";
+import javascriptLogo from "@/assets/images/skills/frontend/javascript-logo.png";
+import svelteLogo from "@/assets/images/skills/other/svelte-logo.png";
+import nextjsLogo from "@/assets/images/skills/frontend/next-js-icon.png";
+import reactLogo from "@/assets/images/skills/frontend/react-icon.png";
 
 export default [
   {
@@ -25,13 +25,8 @@ export default [
     yearLearned: 2023,
   },
   {
-    skillName: "Vue",
+    skillName: "Vue.js",
     img: vueLogo,
-    yearLearned: 2023,
-  },
-  {
-    skillName: "Styled-Components",
-    img: styledComponentsLogo,
     yearLearned: 2023,
   },
   {
@@ -56,7 +51,7 @@ export default [
   },
   {
     skillName: "React",
-    img: false,
+    img: reactLogo,
     yearLearned: 2022,
   },
   {

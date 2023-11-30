@@ -1,9 +1,9 @@
 <template>
-  <div class="h-screen dark:bg-neutral-900 bg-neutral-200">
+  <div class="dark:bg-neutral-900 bg-neutral-200">
     <div class="top-bar h-4 w-full dark:bg-netural-600 bg-neutral-500"></div>
     <div class="top-bar h-4 w-full dark:bg-neutral-700 bg-neutral-400"></div>
     <div class="top-bar h-4 w-full dark:bg-neutral-800 bg-neutral-300"></div>
-    <section class="my-10 mx-10 sm:mx-20 md:mx-32 lg:mx-64 xl:mx-80 2xl:mx-96"><NuxtPage /></section>
+    <section class="py-10 mx-10 sm:mx-20 md:mx-32 lg:mx-64 xl:mx-80 2xl:mx-96"><NuxtPage /></section>
   </div>
 </template>
 

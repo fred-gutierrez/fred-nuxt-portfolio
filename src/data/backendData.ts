@@ -1,4 +1,4 @@
-import nodejsLogo from "@/images/skills/backend/nodejs.png";
+import nodejsLogo from "@/assets/images/skills/backend/nodejs.png";
 
 export default [
   {

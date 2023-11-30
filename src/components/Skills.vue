@@ -5,52 +5,106 @@
     <span ref="activeBtn" class="inline-flex gap-1">
       <button
         @click="changeActiveBtn('all')"
-        :class="dynamicClass"
-        class="px-3 rounded"
+        :class="
+          activeBtn === 'all' &&
+          'dark:bg-neutral-50 bg-neutral-900 dark:text-black text-white'
+        "
+        class="px-4 py-1 rounded dark:bg-neutral-700 bg-neutral-300 dark:text-white text-black"
       >
         All
       </button>
       <button
         @click="changeActiveBtn('frontend')"
-        :class="dynamicClass"
-        class="px-3 rounded"
+        :class="
+          activeBtn === 'frontend' &&
+          'dark:bg-neutral-50 bg-neutral-900 dark:text-black text-white'
+        "
+        class="px-4 py-1 rounded dark:bg-neutral-700 bg-neutral-300 dark:text-white text-black"
       >
         Frontend
       </button>
       <button
         @click="changeActiveBtn('backend')"
-        :class="dynamicClass"
-        class="px-3 rounded"
+        :class="
+          activeBtn === 'backend' &&
+          'dark:bg-neutral-50 bg-neutral-900 dark:text-black text-white'
+        "
+        class="px-4 py-1 rounded dark:bg-neutral-700 bg-neutral-300 dark:text-white text-black"
       >
         Backend
       </button>
       <button
         @click="changeActiveBtn('tools')"
-        :class="dynamicClass"
-        class="px-3 rounded"
+        :class="
+          activeBtn === 'tools' &&
+          'dark:bg-neutral-50 bg-neutral-900 dark:text-black text-white'
+        "
+        class="px-4 py-1 rounded dark:bg-neutral-700 bg-neutral-300 dark:text-white text-black"
       >
         Tools
       </button>
     </span>
   </p>
-  <div v-for="skill in backend">{{ skill.skillName }}</div>
-  <div v-for="skill in frontend">{{ skill.skillName }}</div>
-  <div v-for="skill in tools">{{ skill.skillName }}</div>
+
+  <section
+    class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 xl:grid-cols-6 mt-5"
+  >
+    <template v-if="activeBtn === 'frontend' || activeBtn === 'all'">
+      <div v-for="skill in frontend" :key="nanoid" class="text-center mb-2">
+        <div class="flex justify-center">
+          <img :src="skill.img" :alt="skill.skillName" class="h-20" />
+        </div>
+        <p class="dark:text-neutral-300 text-neutral-600 mt-1 break-words">
+          {{ skill.skillName }}
+        </p>
+      </div>
+    </template>
+
+    <template v-if="activeBtn === 'backend' || activeBtn === 'all'">
+      <div v-for="skill in backend" :key="nanoid" class="text-center mb-2">
+        <div class="flex justify-center">
+          <img :src="skill.img" :alt="skill.skillName" class="h-20" />
+        </div>
+        <p class="dark:text-neutral-300 text-neutral-600 mt-1">
+          {{ skill.skillName }}
+        </p>
+      </div>
+    </template>
+
+    <template v-if="activeBtn === 'tools' || activeBtn === 'all'">
+      <div v-for="skill in tools" :key="nanoid" class="text-center mb-2">
+        <div class="flex justify-center">
+          <img :src="skill.img" :alt="skill.skillName" class="h-20" />
+        </div>
+        <p class="dark:text-neutral-300 text-neutral-600 mt-1">
+          {{ skill.skillName }}
+        </p>
+      </div>
+    </template>
+  </section>
 </template>
 
-<script setup lang="ts">
+<script lang="ts">
 import backend from "@/data/backendData";
 import frontend from "@/data/frontendData";
 import tools from "@/data/toolsData";
+import { nanoid } from "nanoid";
 
-const activeBtn = ref(false);
-
-let dynamicClass = activeBtn
-  ? "dark:bg-neutral-50 bg-neutral-900 dark:text-black text-white"
-  : "dark:bg-neutral-700 bg-neutral-300 dark:text-white text-white";
-
-function changeActiveBtn(selection: string) {
-  if (selection) {
-  }
-}
+export default {
+  data() {
+    return {
+      activeBtn: ref("frontend"),
+      backend,
+      frontend,
+      tools,
+      nanoid,
+    };
+  },
+  methods: {
+    changeActiveBtn(selection: string): string {
+      this.activeBtn = selection;
+      return selection;
+    },
+  },
+};
 </script>
