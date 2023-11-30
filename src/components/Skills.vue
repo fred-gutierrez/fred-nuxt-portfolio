@@ -3,5 +3,5 @@
 </template>
 
 <script setup lang="ts">
-import backend from "@/data/backend";
+import backend from "@/data/backendData";
 </script>
