@@ -1,5 +1,5 @@
 <template>
-  <section class="mt-5">
+  <section class="pt-7">
     <h1 class="text-2xl dark:text-white text-black font-bold">Projects</h1>
     <div v-for="item in projectsData" class="mt-3 mb-5">
       <div class="inline-flex">

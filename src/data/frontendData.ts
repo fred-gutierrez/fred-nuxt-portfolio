@@ -6,22 +6,29 @@ import WordPressLogo from "@/assets/images/skills/frontend/wordpress-logo.svg";
 import GreenSockLogo from "@/assets/images/skills/frontend/gsap-greensock.svg";
 import PostCSSLogo from "@/assets/images/skills/frontend/postcss-logo.png";
 import vueLogo from "@/assets/images/skills/frontend/vuelogo.png";
+// import nuxtLogo2 from "@/assets/images/skills/frontend/nuxt-logo-2.svg";
+import nuxtLogo1 from "@/assets/images/skills/frontend/nuxt-logo.png";
 import htmlLogo from "@/assets/images/skills/frontend/html-logo.png";
 import cssLogo from "@/assets/images/skills/frontend/css-logo.png";
 import javascriptLogo from "@/assets/images/skills/frontend/javascript-logo.png";
-import svelteLogo from "@/assets/images/skills/other/svelte-logo.png";
-import nextjsLogo from "@/assets/images/skills/frontend/next-js-icon.png";
+import svelteLogo from "@/assets/images/skills/frontend/svelte-logo.png";
+import nextjsLogo from "@/assets/images/skills/frontend/next-js-icon-white.png";
 import reactLogo from "@/assets/images/skills/frontend/react-icon.png";
 
 export default [
   {
     skillName: "Next.js",
-    img: nextjsLogo,
+    img:  nextjsLogo,
     yearLearned: 2023,
   },
   {
-    skillName: "Svelte",
+    skillName: "Svelte (Svelte Kit)",
     img: svelteLogo,
+    yearLearned: 2023,
+  },
+  {
+    skillName: "Nuxt.js",
+    img: nuxtLogo1,
     yearLearned: 2023,
   },
   {
@@ -30,17 +37,17 @@ export default [
     yearLearned: 2023,
   },
   {
-    skillName: "TypeScript",
-    img: TypeScriptLogo,
-    yearLearned: 2023,
-  },
-  {
     skillName: "GreenSock",
     img: GreenSockLogo,
     yearLearned: 2022,
   },
   {
-    skillName: "Tailwind",
+    skillName: "TypeScript",
+    img: TypeScriptLogo,
+    yearLearned: 2023,
+  },
+  {
+    skillName: "Tailwind CSS",
     img: TailwindLogo,
     yearLearned: 2022,
   },

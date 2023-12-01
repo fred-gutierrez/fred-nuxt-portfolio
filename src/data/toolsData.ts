@@ -6,7 +6,7 @@ import figmaLogo from "@/assets/images/skills/other/figma_logo.png";
 import vsCodeLogo from "@/assets/images/skills/other/vscode-logo.png";
 import vimLogo from "@/assets/images/skills/other/vim-logo.png";
 import nvimLogo from "@/assets/images/skills/other/nvim-logo.png";
-import linuxLogo from "@/assets/images/skills/other/linux-logo.png";
+import linuxLogo from "@/assets/images/skills/other/linux-logo2.png";
 import ubuntuLogo from "@/assets/images/skills/other/ubuntu-logo.png";
 
 export default [

@@ -1,45 +1,49 @@
 <template>
-  <h1 class="text-2xl dark:text-white text-black font-bold">Skills</h1>
-  <p class="dark:text-white text-dark">
+  <h1 class="text-2xl dark:text-white text-black font-bold pt-4">Skills</h1>
+  <p class="dark:text-white text-dark my-1">
     Sort by:
     <span ref="activeBtn" class="inline-flex gap-1">
       <button
         @click="changeActiveBtn('all')"
         :class="
-          activeBtn === 'all' &&
-          'dark:bg-neutral-50 bg-neutral-900 dark:text-black text-white'
+          activeBtn === 'all'
+            ? 'dark:bg-neutral-50 bg-neutral-900 dark:text-black text-white'
+            : 'dark:bg-neutral-700 bg-neutral-300 dark:text-white text-black'
         "
-        class="px-4 py-1 rounded dark:bg-neutral-700 bg-neutral-300 dark:text-white text-black"
+        class="px-4 py-1 rounded"
       >
         All
       </button>
       <button
         @click="changeActiveBtn('frontend')"
         :class="
-          activeBtn === 'frontend' &&
-          'dark:bg-neutral-50 bg-neutral-900 dark:text-black text-white'
+          activeBtn === 'frontend'
+            ? 'dark:bg-neutral-50 bg-neutral-900 dark:text-black text-white'
+            : 'dark:bg-neutral-700 bg-neutral-300 dark:text-white text-black'
         "
-        class="px-4 py-1 rounded dark:bg-neutral-700 bg-neutral-300 dark:text-white text-black"
+        class="px-4 py-1 rounded"
       >
         Frontend
       </button>
       <button
         @click="changeActiveBtn('backend')"
         :class="
-          activeBtn === 'backend' &&
-          'dark:bg-neutral-50 bg-neutral-900 dark:text-black text-white'
+          activeBtn === 'backend'
+            ? 'dark:bg-neutral-50 bg-neutral-900 dark:text-black text-white'
+            : 'dark:bg-neutral-700 bg-neutral-300 dark:text-white text-black'
         "
-        class="px-4 py-1 rounded dark:bg-neutral-700 bg-neutral-300 dark:text-white text-black"
+        class="px-4 py-1 rounded"
       >
         Backend
       </button>
       <button
         @click="changeActiveBtn('tools')"
         :class="
-          activeBtn === 'tools' &&
-          'dark:bg-neutral-50 bg-neutral-900 dark:text-black text-white'
+          activeBtn === 'tools'
+            ? 'dark:bg-neutral-50 bg-neutral-900 dark:text-black text-white'
+            : 'dark:bg-neutral-700 bg-neutral-300 dark:text-white text-black'
         "
-        class="px-4 py-1 rounded dark:bg-neutral-700 bg-neutral-300 dark:text-white text-black"
+        class="px-4 py-1 rounded"
       >
         Tools
       </button>
@@ -52,9 +56,11 @@
     <template v-if="activeBtn === 'frontend' || activeBtn === 'all'">
       <div v-for="skill in frontend" :key="nanoid" class="text-center mb-2">
         <div class="flex justify-center">
-          <img :src="skill.img" :alt="skill.skillName" class="h-20" />
+          <img :src="skill.img" :alt="skill.skillName" class="h-16 2xl:h-20" />
         </div>
-        <p class="dark:text-neutral-300 text-neutral-600 mt-1 break-words">
+        <p
+          class="dark:text-neutral-300 text-neutral-600 mt-1 text-sm font-medium"
+        >
           {{ skill.skillName }}
         </p>
       </div>
@@ -63,9 +69,11 @@
     <template v-if="activeBtn === 'backend' || activeBtn === 'all'">
       <div v-for="skill in backend" :key="nanoid" class="text-center mb-2">
         <div class="flex justify-center">
-          <img :src="skill.img" :alt="skill.skillName" class="h-20" />
+          <img :src="skill.img" :alt="skill.skillName" class="h-16 2xl:h-20" />
         </div>
-        <p class="dark:text-neutral-300 text-neutral-600 mt-1">
+        <p
+          class="dark:text-neutral-300 text-neutral-600 mt-1 text-sm font-medium"
+        >
           {{ skill.skillName }}
         </p>
       </div>
@@ -74,9 +82,11 @@
     <template v-if="activeBtn === 'tools' || activeBtn === 'all'">
       <div v-for="skill in tools" :key="nanoid" class="text-center mb-2">
         <div class="flex justify-center">
-          <img :src="skill.img" :alt="skill.skillName" class="h-20" />
+          <img :src="skill.img" :alt="skill.skillName" class="h-16 2xl:h-20" />
         </div>
-        <p class="dark:text-neutral-300 text-neutral-600 mt-1">
+        <p
+          class="dark:text-neutral-300 text-neutral-600 mt-1 text-sm font-medium"
+        >
           {{ skill.skillName }}
         </p>
       </div>
