@@ -4,48 +4,18 @@
     Sort by:
     <span ref="activeBtn" class="inline-flex gap-1">
       <button
-        @click="changeActiveBtn('all')"
-        :class="
-          activeBtn === 'all'
-            ? 'dark:bg-neutral-100 bg-neutral-900 dark:text-black text-white'
-            : 'dark:bg-neutral-700 bg-neutral-300 dark:text-white text-black'
-        "
+        v-for="category in categories"
+        :key="nanoid"
+        @click="changeActiveBtn(category.name)"
+        :class="{
+          'dark:bg-neutral-100 bg-neutral-900 dark:text-black text-white':
+            activeBtn === category.name,
+          'dark:bg-neutral-700 bg-neutral-300 dark:text-white text-black':
+            activeBtn !== category.name,
+        }"
         class="px-4 py-1 rounded"
       >
-        All
-      </button>
-      <button
-        @click="changeActiveBtn('frontend')"
-        :class="
-          activeBtn === 'frontend'
-            ? 'dark:bg-neutral-100 bg-neutral-900 dark:text-black text-white'
-            : 'dark:bg-neutral-700 bg-neutral-300 dark:text-white text-black'
-        "
-        class="px-4 py-1 rounded"
-      >
-        Frontend
-      </button>
-      <button
-        @click="changeActiveBtn('backend')"
-        :class="
-          activeBtn === 'backend'
-            ? 'dark:bg-neutral-100 bg-neutral-900 dark:text-black text-white'
-            : 'dark:bg-neutral-700 bg-neutral-300 dark:text-white text-black'
-        "
-        class="px-4 py-1 rounded"
-      >
-        Backend
-      </button>
-      <button
-        @click="changeActiveBtn('tools')"
-        :class="
-          activeBtn === 'tools'
-            ? 'dark:bg-neutral-100 bg-neutral-900 dark:text-black text-white'
-            : 'dark:bg-neutral-700 bg-neutral-300 dark:text-white text-black'
-        "
-        class="px-4 py-1 rounded"
-      >
-        Tools
+        {{ category.label }}
       </button>
     </span>
   </p>
@@ -53,49 +23,25 @@
   <section
     class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7 mt-5"
   >
-    <template v-if="activeBtn === 'frontend' || activeBtn === 'all'">
-      <div
-        v-for="skill in frontend"
-        :key="nanoid"
-        class="skill-GSAP text-center mb-2"
-      >
-        <div class="flex justify-center">
-          <img :src="skill.img" :alt="skill.skillName" class="h-16 2xl:h-20" />
+    <template v-for="category in categories">
+      <template v-if="activeBtn === category.name">
+        <div
+          v-for="skill in category.skills"
+          :key="nanoid()"
+          class="skill-GSAP text-center pb-3"
+        >
+          <div class="flex justify-center">
+            <img
+              :src="skill.img"
+              :alt="skill.skillName"
+              class="h-16 2xl:h-20"
+            />
+          </div>
+          <p class="dark:text-neutral-300 text-neutral-600 mt-1">
+            {{ skill.skillName }}
+          </p>
         </div>
-        <p class="dark:text-neutral-300 text-neutral-600 mt-1">
-          {{ skill.skillName }}
-        </p>
-      </div>
-    </template>
-
-    <template v-if="activeBtn === 'backend' || activeBtn === 'all'">
-      <div
-        v-for="skill in backend"
-        :key="nanoid"
-        class="skill-GSAP text-center mb-2"
-      >
-        <div class="flex justify-center">
-          <img :src="skill.img" :alt="skill.skillName" class="h-16 2xl:h-20" />
-        </div>
-        <p class="dark:text-neutral-300 text-neutral-600 mt-1">
-          {{ skill.skillName }}
-        </p>
-      </div>
-    </template>
-
-    <template v-if="activeBtn === 'tools' || activeBtn === 'all'">
-      <div
-        v-for="skill in tools"
-        :key="nanoid"
-        class="skill-GSAP text-center mb-2"
-      >
-        <div class="flex justify-center">
-          <img :src="skill.img" :alt="skill.skillName" class="h-16 2xl:h-20" />
-        </div>
-        <p class="dark:text-neutral-300 text-neutral-600 mt-1">
-          {{ skill.skillName }}
-        </p>
-      </div>
+      </template>
     </template>
   </section>
 </template>
@@ -107,13 +53,18 @@ import tools from "@/data/toolsData";
 import gsap from "gsap";
 import { nanoid } from "nanoid";
 
+const allSkills = [...frontend, ...backend, ...tools];
+
 export default {
   data() {
     return {
       activeBtn: ref("frontend"),
-      backend,
-      frontend,
-      tools,
+      categories: [
+        { id: 1, name: "all", label: "All", skills: allSkills },
+        { id: 2, name: "frontend", label: "Frontend", skills: frontend },
+        { id: 3, name: "backend", label: "Backend", skills: backend },
+        { id: 4, name: "tools", label: "Tools", skills: tools },
+      ],
       nanoid,
     };
   },
