@@ -9,6 +9,10 @@ export default defineNuxtConfig({
           content:
             "This is Fred David Solis Gutierrez's portfolio, where he showcases various projects and the skills he has acquired.",
         },
+        {
+          name: "theme-color",
+          content: "#737373"
+        }
       ],
       link: [{ rel: "icon", type: "image/png", href: "/logo-fred.png" }],
     },
