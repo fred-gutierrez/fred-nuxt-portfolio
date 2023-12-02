@@ -70,14 +70,29 @@ export default {
   },
   methods: {
     changeActiveBtn(selection: string) {
+      this.playGsapAnimation();
       this.activeBtn = selection;
+    },
+    initialAnimation() {
+      var tl = gsap.timeline({
+        delay: 2,
+      });
+      tl.from(".skill-GSAP", { x: 30, duration: 1, stagger: 0.1, opacity: 0 });
+    },
+    playGsapAnimation() {
+      gsap.from(".skill-GSAP", {
+        x: 30,
+        duration: 1,
+        stagger: 0.1,
+        opacity: 0,
+      });
     },
   },
   mounted() {
-    var tl = gsap.timeline({
-      delay: 2,
-    });
-    tl.from(".skill-GSAP", { x: 30, duration: 1, stagger: 0.1, opacity: 0 });
+    this.initialAnimation();
+  },
+  updated() {
+    this.playGsapAnimation();
   },
 };
 </script>

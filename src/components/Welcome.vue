@@ -1,9 +1,9 @@
 <template>
   <div ref="innerHTML">
     <div
-      class="tempbg fixed h-full w-full bg-neutral-900 flex items-center"
+      class="tempbg fixed h-full w-full dark:bg-neutral-900 bg-neutral-200 flex items-center"
     >
-      <p class="text text-white mx-auto font-semibold text-5xl opacity-0">
+      <p class="text dark:text-white text-black mx-auto font-semibold text-5xl opacity-0">
         Welcome!
       </p>
     </div>
