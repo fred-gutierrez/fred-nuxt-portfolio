@@ -1,5 +1,5 @@
 <template>
-  <h1 class="text-2xl dark:text-white text-black font-bold pt-4">Skills</h1>
+  <h1 class="text-3xl dark:text-white text-black font-bold pt-8">Skills</h1>
   <p class="dark:text-white text-dark my-1">
     Sort by:
     <span ref="activeBtn" class="inline-flex gap-1">
@@ -51,15 +51,19 @@
   </p>
 
   <section
-    class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 xl:grid-cols-6 mt-5"
+    class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7 mt-5"
   >
     <template v-if="activeBtn === 'frontend' || activeBtn === 'all'">
-      <div v-for="skill in frontend" :key="nanoid" class="text-center mb-2">
+      <div
+        v-for="skill in frontend"
+        :key="nanoid"
+        class="skill-GSAP text-center mb-2"
+      >
         <div class="flex justify-center">
           <img :src="skill.img" :alt="skill.skillName" class="h-16 2xl:h-20" />
         </div>
         <p
-          class="dark:text-neutral-300 text-neutral-600 mt-1 text-sm font-medium"
+          class="dark:text-neutral-300 text-neutral-600 mt-1"
         >
           {{ skill.skillName }}
         </p>
@@ -67,12 +71,16 @@
     </template>
 
     <template v-if="activeBtn === 'backend' || activeBtn === 'all'">
-      <div v-for="skill in backend" :key="nanoid" class="text-center mb-2">
+      <div
+        v-for="skill in backend"
+        :key="nanoid"
+        class="skill-GSAP text-center mb-2"
+      >
         <div class="flex justify-center">
           <img :src="skill.img" :alt="skill.skillName" class="h-16 2xl:h-20" />
         </div>
         <p
-          class="dark:text-neutral-300 text-neutral-600 mt-1 text-sm font-medium"
+          class="dark:text-neutral-300 text-neutral-600 mt-1"
         >
           {{ skill.skillName }}
         </p>
@@ -80,12 +88,16 @@
     </template>
 
     <template v-if="activeBtn === 'tools' || activeBtn === 'all'">
-      <div v-for="skill in tools" :key="nanoid" class="text-center mb-2">
+      <div
+        v-for="skill in tools"
+        :key="nanoid"
+        class="skill-GSAP text-center mb-2"
+      >
         <div class="flex justify-center">
           <img :src="skill.img" :alt="skill.skillName" class="h-16 2xl:h-20" />
         </div>
         <p
-          class="dark:text-neutral-300 text-neutral-600 mt-1 text-sm font-medium"
+          class="dark:text-neutral-300 text-neutral-600 mt-1"
         >
           {{ skill.skillName }}
         </p>
@@ -98,6 +110,7 @@
 import backend from "@/data/backendData";
 import frontend from "@/data/frontendData";
 import tools from "@/data/toolsData";
+import gsap from "gsap";
 import { nanoid } from "nanoid";
 
 export default {
@@ -115,6 +128,12 @@ export default {
       this.activeBtn = selection;
       return selection;
     },
+  },
+  mounted() {
+    var tl = gsap.timeline({
+      delay: 2,
+    });
+    tl.from(".skill-GSAP", { x: 30, duration: 1, stagger: 0.1, opacity: 0 });
   },
 };
 </script>

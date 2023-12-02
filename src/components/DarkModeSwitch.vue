@@ -1,5 +1,5 @@
 <template>
-  <button ref="darkMode" @click="darkModeSwitch">
+  <button ref="darkMode" class="media-btn" @click="darkModeSwitch">
     <i v-if="darkMode" class="fa-regular fa-moon fa-xl"></i>
     <i v-else class="fa-regular fa-sun-bright fa-xl"></i>
   </button>

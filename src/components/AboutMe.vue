@@ -7,10 +7,10 @@
           href="https://www.linkedin.com/in/freddavidsolisgutierrez/"
           target="_blank"
         >
-          <i class="fa-brands fa-linkedin-in fa-xl"></i>
+          <i class="media-btn fa-brands fa-linkedin-in fa-xl"></i>
         </a>
         <a href="https://github.com/fred-gutierrez" target="_blank">
-          <i class="fa-brands fa-github fa-xl"></i>
+          <i class="media-btn fa-brands fa-github fa-xl"></i>
         </a>
         <DarkModeSwitch />
       </div>
@@ -18,8 +18,7 @@
     <div class="text-2xl font-light">Software Developer</div>
   </section>
 
-  <section class="dark:text-white text-black mt-5">
-    <h1 class="text-2xl font-bold">About me</h1>
+  <section class="dark:text-white text-black mt-2">
     <p class="mt-2">
       Hey there! I'm Fred from Costa Rica, on a mission to create and deliver
       technology-advancing projects and products that make a positive impact on
@@ -27,3 +26,21 @@
     </p>
   </section>
 </template>
+
+<script lang="ts">
+import gsap from "gsap";
+
+export default {
+  mounted() {
+    var tl = gsap.timeline({
+      delay: 2,
+    });
+    tl.from(".media-btn", {
+      y: 50,
+      duration: 1,
+      opacity: 0,
+      stagger: -0.3,
+    });
+  },
+};
+</script>
