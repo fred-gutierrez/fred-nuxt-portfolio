@@ -1,5 +1,5 @@
 <template>
-  <footer class="text-center py-14">
+  <footer class="text-center py-10">
     <p class="inline-flex items-center dark:text-neutral-300 text-neutral-800">
       Made with
       <img

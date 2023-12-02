@@ -7,7 +7,7 @@
         @click="changeActiveBtn('all')"
         :class="
           activeBtn === 'all'
-            ? 'dark:bg-neutral-50 bg-neutral-900 dark:text-black text-white'
+            ? 'dark:bg-neutral-100 bg-neutral-900 dark:text-black text-white'
             : 'dark:bg-neutral-700 bg-neutral-300 dark:text-white text-black'
         "
         class="px-4 py-1 rounded"
@@ -18,7 +18,7 @@
         @click="changeActiveBtn('frontend')"
         :class="
           activeBtn === 'frontend'
-            ? 'dark:bg-neutral-50 bg-neutral-900 dark:text-black text-white'
+            ? 'dark:bg-neutral-100 bg-neutral-900 dark:text-black text-white'
             : 'dark:bg-neutral-700 bg-neutral-300 dark:text-white text-black'
         "
         class="px-4 py-1 rounded"
@@ -29,7 +29,7 @@
         @click="changeActiveBtn('backend')"
         :class="
           activeBtn === 'backend'
-            ? 'dark:bg-neutral-50 bg-neutral-900 dark:text-black text-white'
+            ? 'dark:bg-neutral-100 bg-neutral-900 dark:text-black text-white'
             : 'dark:bg-neutral-700 bg-neutral-300 dark:text-white text-black'
         "
         class="px-4 py-1 rounded"
@@ -40,7 +40,7 @@
         @click="changeActiveBtn('tools')"
         :class="
           activeBtn === 'tools'
-            ? 'dark:bg-neutral-50 bg-neutral-900 dark:text-black text-white'
+            ? 'dark:bg-neutral-100 bg-neutral-900 dark:text-black text-white'
             : 'dark:bg-neutral-700 bg-neutral-300 dark:text-white text-black'
         "
         class="px-4 py-1 rounded"
@@ -62,9 +62,7 @@
         <div class="flex justify-center">
           <img :src="skill.img" :alt="skill.skillName" class="h-16 2xl:h-20" />
         </div>
-        <p
-          class="dark:text-neutral-300 text-neutral-600 mt-1"
-        >
+        <p class="dark:text-neutral-300 text-neutral-600 mt-1">
           {{ skill.skillName }}
         </p>
       </div>
@@ -79,9 +77,7 @@
         <div class="flex justify-center">
           <img :src="skill.img" :alt="skill.skillName" class="h-16 2xl:h-20" />
         </div>
-        <p
-          class="dark:text-neutral-300 text-neutral-600 mt-1"
-        >
+        <p class="dark:text-neutral-300 text-neutral-600 mt-1">
           {{ skill.skillName }}
         </p>
       </div>
@@ -96,9 +92,7 @@
         <div class="flex justify-center">
           <img :src="skill.img" :alt="skill.skillName" class="h-16 2xl:h-20" />
         </div>
-        <p
-          class="dark:text-neutral-300 text-neutral-600 mt-1"
-        >
+        <p class="dark:text-neutral-300 text-neutral-600 mt-1">
           {{ skill.skillName }}
         </p>
       </div>
@@ -124,9 +118,8 @@ export default {
     };
   },
   methods: {
-    changeActiveBtn(selection: string): string {
+    changeActiveBtn(selection: string) {
       this.activeBtn = selection;
-      return selection;
     },
   },
   mounted() {
