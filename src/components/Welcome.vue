@@ -1,6 +1,8 @@
 <template>
   <div ref="innerHTML">
-    <div class="tempbg absolute h-full w-full bg-neutral-900 flex items-center">
+    <div
+      class="tempbg fixed h-full w-full bg-neutral-900 flex items-center"
+    >
       <p class="text text-white mx-auto font-semibold text-5xl opacity-0">
         Welcome!
       </p>
