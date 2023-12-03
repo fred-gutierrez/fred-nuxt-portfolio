@@ -3,7 +3,7 @@ export default [
     projectName: "SnapNote",
     typeOfProject: "Extension",
     description:
-      "Open-Source note-taking extension, with a Notion-like editor, BlockNote, which was made with the intent of speed.",
+      "Open-source browser extension designed for fast note-taking during web browsing. Featuring a Notion-like editor powered by BlockNote, it provides a modern interface for rapid and versatile note creation. The extension also supports downloading notes in Markdown and HTML formats, as well as convenient text copying.",
     madeWith: "made with crxjs, react, typescript, tailwind css and vite",
     url: "https://snapnote-demo.vercel.app/",
     gitRepo: "https://github.com/fred-gutierrez/snapnote",
@@ -15,7 +15,7 @@ export default [
     projectName: "Eka Bienes Raices",
     typeOfProject: "Website",
     description:
-      "Realtor property page, a robust system was created to fetch, filter, and automatically display the Realtor’s properties from her Facebook posts, without any input from the Realtor.",
+      "A Realtor's property page that involves a robust system designed to automatically fetch, filter, and display the Realtor's properties directly from her Facebook posts. Notably, this system operates seamlessly without requiring any manual input from the Realtor.",
     madeWith:
       "made with next.js, react, typescript, tailwind css, vite, node.js and gsap",
     url: "https://ekabienesraices.vercel.app/",
