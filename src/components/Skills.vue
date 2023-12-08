@@ -1,5 +1,5 @@
 <template>
-  <h1 class="text-3xl dark:text-white text-black font-bold pt-8">Skills</h1>
+  <h1 class="text-3xl dark:text-white text-black font-bold pt-6">Skills</h1>
   <p class="dark:text-white text-dark my-1">
     Sort by:
     <span ref="activeBtn" class="inline-flex gap-1">

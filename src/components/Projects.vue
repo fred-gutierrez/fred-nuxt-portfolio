@@ -2,7 +2,7 @@
   <section class="pt-8">
     <h1 class="text-3xl dark:text-white text-black font-bold">Projects</h1>
 
-    <div v-for="item in projectsData" class="pt-3">
+    <div v-for="item in projectsData" class="pt-3 pb-4">
       <div class="inline-flex">
         <p>
           <span
