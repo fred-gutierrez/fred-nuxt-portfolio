@@ -36,10 +36,10 @@ export default {
       delay: 2,
     });
     tl.from(".media-btn", {
-      y: 50,
+      y: 20,
       duration: 1,
       opacity: 0,
-      stagger: -0.3,
+      stagger: 0.3,
     });
   },
 };
