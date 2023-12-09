@@ -6,6 +6,7 @@ This portfolio serves as a representation of my work and skills in Software Deve
 The portfolio is built using the following technologies:
 - **Nuxt**
 - **Vue.js**
+- **TypeScript**
 - **Greensock** (Animations)
 - **Tailwind CSS**
 - **Vite**
