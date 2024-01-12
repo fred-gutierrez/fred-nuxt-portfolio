@@ -4,7 +4,7 @@ export default [
     typeOfProject: "Extension",
     description:
       "Open-source browser extension designed for fast note-taking during web browsing. Featuring a Notion-like editor powered by BlockNote, it provides a modern interface for rapid and versatile note creation. The extension also supports downloading notes in Markdown, as well as convenient text copying in both regular text and Markdown formats.",
-    madeWith: "made with crxjs, react, typescript, tailwind css and vite",
+    madeWith: "made with crxjs, react, typescript, redux, tailwind css and vite",
     url: "https://snapnote-demo.vercel.app/",
     gitRepo: "https://github.com/fred-gutierrez/snapnote",
     chromeUrl:

@@ -13,8 +13,14 @@ import svelteLogo from "@/assets/images/skills/frontend/svelte-logo.png";
 import reactLogo from "@/assets/images/skills/frontend/react-icon.png";
 import nextjsLogo from "@/assets/images/skills/frontend/nextjs-logo.png";
 import nuxtLogo from "@/assets/images/skills/frontend/nuxt-logo.png";
+import reduxLogo from "@/assets/images/skills/frontend/redux-logo.svg";
 
 export default [
+  {
+    skillName: "Redux",
+    img: reduxLogo,
+    yearLearned: 2024,
+  },
   {
     skillName: "Next.js",
     img: nextjsLogo,
