@@ -1,8 +1,14 @@
-import nodejsLogo from "@/assets/images/skills/backend/nodejs.png";
-import postgreSqlLogo from "@/assets/images/skills/backend/postgresql-logo.png"
-import sqlLogo from "@/assets/images/skills/backend/sql-logo.png"
+import nodejsLogo from "@/assets/images/skills/backend/nodejs.svg";
+import postgreSqlLogo from "@/assets/images/skills/backend/postgresql.svg"
+import sqlLogo from "@/assets/images/skills/backend/sql.png"
+import supabaseLogo from "@/assets/images/skills/backend/supabase.svg"
 
 export default [
+  {
+    skillName: "Supabase",
+    img: supabaseLogo,
+    yearLearned: 2024,
+  },
   {
     skillName: "PostgreSQL",
     img: postgreSqlLogo,
