@@ -3,13 +3,13 @@
     <div class="flex justify-between">
       <h1 class="text-3xl font-bold">Fred</h1>
       <div class="flex gap-5 items-center">
+        <DarkModeSwitch />
         <a href="https://www.linkedin.com/in/freddavidsolisgutierrez/" target="_blank">
           <i class="media-btn fa-brands fa-linkedin-in fa-xl"></i>
         </a>
         <a href="https://github.com/fred-gutierrez" target="_blank">
           <i class="media-btn fa-brands fa-github fa-xl"></i>
         </a>
-        <DarkModeSwitch />
       </div>
     </div>
     <div class="text-2xl font-light">Software Developer</div>
