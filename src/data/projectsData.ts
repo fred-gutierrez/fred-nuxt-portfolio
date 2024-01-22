@@ -17,7 +17,7 @@ export default [
     description:
       "A Realtor's property page that involves a robust system designed to automatically fetch, filter, and display the Realtor's properties directly from her Facebook posts. Notably, this system operates seamlessly without requiring any manual input from the Realtor.",
     madeWith:
-      "made with next.js, react, typescript, tailwind css, vite, node.js, gsap, sql and postgresql",
+      "made with next.js, react, typescript, tailwind css, vite, node.js, gsap, supabase, sql and postgresql",
     url: "https://ekabienesraices.vercel.app/",
     gitRepo: "https://github.com/fred-gutierrez/eka-bienes-raices",
   },
