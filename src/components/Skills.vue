@@ -2,7 +2,7 @@
   <h1 class="text-3xl dark:text-white text-black font-bold pt-6">Skills</h1>
   <p class="dark:text-white text-dark my-1">
     Sort by:
-    <span ref="activeBtn" class="inline-flex gap-1.5">
+    <span ref="activeBtn" class="inline-flex flex-wrap gap-1.5">
       <button v-for="category in categories" :key="nanoid" @click="changeActiveBtn(category.name)" :class="{
         'dark:bg-neutral-100 bg-neutral-800 dark:text-black text-white':
           activeBtn === category.name,
