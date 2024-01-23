@@ -2,40 +2,24 @@
   <h1 class="text-3xl dark:text-white text-black font-bold pt-6">Skills</h1>
   <p class="dark:text-white text-dark my-1">
     Sort by:
-    <span ref="activeBtn" class="inline-flex gap-1">
-      <button
-        v-for="category in categories"
-        :key="nanoid"
-        @click="changeActiveBtn(category.name)"
-        :class="{
-          'dark:bg-neutral-100 bg-neutral-900 dark:text-black text-white':
-            activeBtn === category.name,
-          'dark:bg-neutral-700 bg-neutral-300 dark:text-white text-black':
-            activeBtn !== category.name,
-        }"
-        class="px-4 py-1 rounded"
-      >
+    <span ref="activeBtn" class="inline-flex gap-1.5">
+      <button v-for="category in categories" :key="nanoid" @click="changeActiveBtn(category.name)" :class="{
+        'dark:bg-neutral-100 bg-neutral-800 dark:text-black text-white':
+          activeBtn === category.name,
+        'dark:bg-neutral-700 bg-neutral-300 dark:text-white text-black':
+          activeBtn !== category.name,
+      }" class="px-4 py-1 rounded shadow-sm shadow-neutral-400 dark:shadow-neutral-500">
         {{ category.label }}
       </button>
     </span>
   </p>
 
-  <section
-    class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7 mt-5"
-  >
+  <section class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7 mt-5">
     <template v-for="category in categories">
       <template v-if="activeBtn === category.name">
-        <div
-          v-for="skill in category.skills"
-          :key="nanoid()"
-          class="skill-GSAP text-center pb-3"
-        >
+        <div v-for="skill in category.skills" :key="nanoid()" class="skill-GSAP text-center pb-3">
           <div class="flex justify-center">
-            <img
-              :src="skill.img"
-              :alt="skill.skillName"
-              class="h-16 2xl:h-20"
-            />
+            <img :src="skill.img" :alt="skill.skillName" class="h-16 2xl:h-20" />
           </div>
           <p class="dark:text-neutral-300 text-neutral-600 mt-1">
             {{ skill.skillName }}
