@@ -27,6 +27,7 @@
           </span>
         </span>
       </div>
+      <ImageCarousel :images="item.images" />
     </div>
   </section>
 </template>

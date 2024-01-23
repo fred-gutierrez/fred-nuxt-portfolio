@@ -1,3 +1,10 @@
+import ekaImage1 from "@/assets/images/projects/eka/eka1.png"
+import ekaImage2 from "@/assets/images/projects/eka/eka2.png"
+import ekaImage3 from "@/assets/images/projects/eka/eka3.png"
+
+import snapnoteImage1 from "@/assets/images/projects/snapnote/snapnote1.png"
+import snapnoteImage2 from "@/assets/images/projects/snapnote/snapnote2.png"
+
 export default [
   {
     projectName: "SnapNote",
@@ -10,6 +17,10 @@ export default [
     chromeUrl:
       "https://chromewebstore.google.com/detail/snapnote/gblgefagjalfolidiedaepbkacajaeng",
     firefoxUrl: "https://addons.mozilla.org/firefox/addon/snapnote/",
+    images: [
+      snapnoteImage1,
+      snapnoteImage2
+    ]
   },
   {
     projectName: "Eka Bienes Raices",
@@ -20,5 +31,10 @@ export default [
       "made with next.js, react, typescript, tailwind css, vite, node.js, gsap, supabase, sql and postgresql",
     url: "https://ekabienesraices.vercel.app/",
     gitRepo: "https://github.com/fred-gutierrez/eka-bienes-raices",
+    images: [
+      ekaImage1,
+      ekaImage2,
+      ekaImage3
+    ]
   },
 ];
