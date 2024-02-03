@@ -9,7 +9,11 @@ export default {
     "./app.vue",
   ],
   theme: {
-    extend: {},
+    extend: {
+      maxWidth: {
+        '172': '42rem',
+      }
+    },
   },
   plugins: [],
   darkMode: "class",

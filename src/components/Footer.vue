@@ -6,10 +6,5 @@
       and
       <img src="@/assets/images/skills/frontend/vuelogo.png" alt="Vue" class="h-4 mx-1" /> by Fred
     </p>
-    <p class="dark:text-neutral-500 text-neutral-400 ">
-      <a class="hover:underline" href="https://github.com/fred-gutierrez/fred-nuxt-portfolio" target="_blank">
-        Repo <i class="fa-light fa-arrow-up-right-from-square fa-xs"></i>
-      </a>
-    </p>
   </footer>
 </template>

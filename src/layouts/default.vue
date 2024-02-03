@@ -4,9 +4,11 @@
     <div class="topBar h-4 w-full dark:bg-netural-600 bg-neutral-500"></div>
     <div class="topBar h-4 w-full dark:bg-neutral-700 bg-neutral-400"></div>
     <div class="topBar h-4 w-full dark:bg-neutral-800 bg-neutral-300"></div>
-    <section class="py-10 mx-10 sm:mx-20 md:mx-32 lg:mx-64 xl:mx-80 2xl:mx-96">
-      <NuxtPage />
-    </section>
+    <div class="flex justify-center">
+      <section class="py-10 mx-10 sm:mx-20 md:mx-32 lg:mx-64 xl:mx-80 max-w-172">
+        <NuxtPage />
+      </section>
+    </div>
     <Footer />
   </div>
 </template>

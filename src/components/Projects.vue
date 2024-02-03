@@ -12,8 +12,8 @@
             - {{ item.madeWith }}</span>
         </p>
       </div>
-      <p class="dark:text-white text-black mt-1 indent-1">{{ item.description }}</p>
-      <div class="dark:text-neutral-200 text-neutral-800 mt-3">
+      <p class="dark:text-neutral-200 text-neutral-800 mt-1">{{ item.description }}</p>
+      <div class="dark:text-neutral-100 text-neutral-900 mt-3">
         <span><a class="underline" :href="item.url" target="_blank">{{
           item.typeOfProject === "Extension" ? "Demo" : "Website"
         }}</a>
@@ -27,7 +27,7 @@
           </span>
         </span>
       </div>
-      <ImageCarousel :images="item.images" />
+      <!-- <ImageCarousel :images="item.images" /> -->
     </div>
   </section>
 </template>

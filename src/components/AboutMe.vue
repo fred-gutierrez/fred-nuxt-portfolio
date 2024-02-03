@@ -15,8 +15,8 @@
     <div class="text-2xl font-light">Software Developer</div>
   </section>
 
-  <section class="dark:text-white text-black mt-2">
-    <p class="mt-2 indent-1">
+  <section class="dark:text-neutral-200 text-neutral-800 mt-2">
+    <p class="mt-2">
       Hey there! I'm Fred from Costa Rica, on a mission to create and deliver
       technology-advancing projects and products that make a positive impact on
       our world.

@@ -8,7 +8,7 @@
           activeBtn === category.name,
         'dark:bg-neutral-700 bg-neutral-300 dark:text-white text-black':
           activeBtn !== category.name,
-      }" class="px-4 py-1 rounded shadow-sm shadow-neutral-400 dark:shadow-neutral-500">
+      }" class="px-4 py-1 rounded shadow-sm shadow-neutral-400 dark:shadow-neutral-600">
         {{ category.label }}
       </button>
     </span>
@@ -19,7 +19,7 @@
       <template v-if="activeBtn === category.name">
         <div v-for="skill in category.skills" :key="nanoid()" class="skill-GSAP text-center pb-3">
           <div class="flex justify-center">
-            <img :src="skill.img" :alt="skill.skillName" class="h-16 2xl:h-20" />
+            <img :src="skill.img" :alt="skill.skillName" class="h-16" />
           </div>
           <p class="dark:text-neutral-300 text-neutral-600 mt-1">
             {{ skill.skillName }}
