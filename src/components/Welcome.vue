@@ -21,7 +21,7 @@ export default {
 
     gsap.to(".text", { opacity: 0, duration: 1, y: -100, delay: 2 });
 
-    gsap.to(".tempbg", { delay: 2, opacity: 0, duration: 1 });
+    gsap.to(".tempbg", { delay: 2, opacity: 0, duration: 2 });
 
     gsap.timeline({
       delay: 3,

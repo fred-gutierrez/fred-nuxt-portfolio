@@ -1,7 +1,7 @@
 <template>
   <section class="dark:text-white text-black">
     <div class="flex justify-between">
-      <h1 class="text-3xl font-bold">Fred</h1>
+      <h1 class="global-animation text-3xl font-bold">Fred</h1>
       <div class="flex gap-5 items-center">
         <DarkModeSwitch />
         <a href="https://www.linkedin.com/in/freddavidsolisgutierrez/" target="_blank">
@@ -12,11 +12,11 @@
         </a>
       </div>
     </div>
-    <div class="text-2xl font-light">Software Developer</div>
+    <div class="global-animation text-2xl font-light">Software Developer</div>
   </section>
 
   <section class="dark:text-neutral-200 text-neutral-800 mt-2">
-    <p class="mt-2">
+    <p class="global-animation mt-2">
       Hey there! I'm Fred from Costa Rica, on a mission to create and deliver
       technology-advancing projects and products that make a positive impact on
       our world.
@@ -33,10 +33,10 @@ export default {
       delay: 2,
     });
     tl.from(".media-btn", {
-      y: 20,
+      y: 15,
       duration: 1,
       opacity: 0,
-      stagger: 0.3,
+      stagger: 0.25,
     });
   },
 };

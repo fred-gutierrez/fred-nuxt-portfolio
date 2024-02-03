@@ -1,6 +1,6 @@
 <template>
-  <h1 class="text-3xl dark:text-white text-black font-bold pt-6">Skills</h1>
-  <p class="dark:text-white text-dark my-1">
+  <h1 class="global-animation text-3xl dark:text-white text-black font-bold pt-6">Skills</h1>
+  <p class="global-animation dark:text-white text-dark my-1">
     Sort by:
     <span ref="activeBtn" class="inline-flex flex-wrap gap-1.5">
       <button v-for="category in categories" :key="nanoid" @click="changeActiveBtn(category.name)" :class="{
@@ -14,16 +14,18 @@
     </span>
   </p>
 
-  <section class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7 mt-5">
+  <section class="global-animation grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7 mt-5">
     <template v-for="category in categories">
       <template v-if="activeBtn === category.name">
-        <div v-for="skill in category.skills" :key="nanoid()" class="skill-GSAP text-center pb-3">
-          <div class="flex justify-center">
-            <img :src="skill.img" :alt="skill.skillName" class="h-16" />
+        <div v-for="skill in category.skills" class="global-animation">
+          <div :key="nanoid()" class="skill-GSAP text-center pb-3">
+            <div class="flex justify-center">
+              <img :src="skill.img" :alt="skill.skillName" class="h-16" />
+            </div>
+            <p class="dark:text-neutral-300 text-neutral-600 mt-1">
+              {{ skill.skillName }}
+            </p>
           </div>
-          <p class="dark:text-neutral-300 text-neutral-600 mt-1">
-            {{ skill.skillName }}
-          </p>
         </div>
       </template>
     </template>
