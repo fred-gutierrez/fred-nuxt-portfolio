@@ -2,7 +2,7 @@
   <section class="pt-8">
     <h1 class="global-animation text-3xl dark:text-white text-black font-bold">Projects</h1>
 
-    <div v-for="item in projectsData" class="pt-3 pb-4">
+    <div v-for="item in projectsData" class="pt-2 pb-4">
       <div class="global-animation inline-flex">
         <p>
           <span class="dark:text-white text-black underline text-lg font-semibold">
