@@ -1,9 +1,9 @@
 <template>
   <section class="pt-8">
-    <h1 class="global-animation text-3xl dark:text-white text-black font-bold">Projects</h1>
+    <h1 class="text-3xl dark:text-white text-black font-bold">Projects</h1>
 
     <div v-for="item in projectsData" class="pt-2 pb-4">
-      <div class="global-animation inline-flex">
+      <div class="inline-flex">
         <p>
           <span class="dark:text-white text-black underline text-lg font-semibold">
             {{ item.projectName }}
@@ -12,9 +12,9 @@
             - {{ item.madeWith }}</span>
         </p>
       </div>
-      <p class="global-animation dark:text-neutral-200 text-neutral-800 mt-1">{{ item.description }}</p>
+      <p class="dark:text-neutral-200 text-neutral-800 mt-1">{{ item.description }}</p>
       <div class="dark:text-neutral-100 text-neutral-900 mt-3">
-        <span class="global-animation">
+        <span>
           <a class="underline" :href="item.url" target="_blank">{{
             item.typeOfProject === "Extension" ? "Demo" : "Website"
           }}</a>
