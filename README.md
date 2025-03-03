@@ -1,4 +1,4 @@
-# Fred's Portfolio!
+# My Portfolio!
 
 This portfolio serves as a representation of my work and skills in Software Development. It provides an organized and visually appealing display of my projects and highlights the latest technologies I've been exploring.
 
