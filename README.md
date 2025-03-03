@@ -14,7 +14,7 @@ The portfolio is built using the following technologies:
 ## Features
 - **Responsive Design**: The portfolio is fully responsive and adapts to different screen sizes, ensuring a consistent experience across devices.
 - **Project Showcase**: I have included a dedicated section to display my projects, along with descriptions and relevant links.
-- **Latest Skills**: Another section highlights the latest skills I've acquired, demonstrating my commitment to continuous learning.
+- **Latest Skills**: Another section highlights the latest skills I've acquired.
 
 ## Sketches
 | ![Desktop](https://github.com/fred-gutierrez/fred-nuxt-portfolio/assets/81400463/62338cad-dd87-4270-8318-5008a16494e5) | ![Desktop - Dark Mode](https://github.com/fred-gutierrez/fred-nuxt-portfolio/assets/81400463/3286ad70-cbf8-406e-9c4a-d260991e0af5) |
