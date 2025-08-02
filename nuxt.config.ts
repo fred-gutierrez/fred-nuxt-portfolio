@@ -17,15 +17,18 @@ export default defineNuxtConfig({
       link: [{ rel: "icon", type: "image/png", href: "/logo-fred.png" }],
     },
   },
+
   devtools: { enabled: true },
   srcDir: "src/",
   css: ["@/assets/css/main.css"],
+
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
   },
+
   modules: [
     [
       '@nuxtjs/google-fonts',
@@ -35,5 +38,5 @@ export default defineNuxtConfig({
         }
       }
     ]
-  ]
+  ],
 });

@@ -9,13 +9,19 @@ import vueLogo from "@/assets/images/skills/frontend/vuelogo.png";
 import htmlLogo from "@/assets/images/skills/frontend/html-logo.png";
 import cssLogo from "@/assets/images/skills/frontend/css-logo.png";
 import javascriptLogo from "@/assets/images/skills/frontend/javascript-logo.png";
-import svelteLogo from "@/assets/images/skills/frontend/svelte-logo.png";
+// import svelteLogo from "@/assets/images/skills/frontend/svelte-logo.png";
 import reactLogo from "@/assets/images/skills/frontend/react-icon.png";
 import nextjsLogo from "@/assets/images/skills/frontend/nextjs-logo.png";
 import nuxtLogo from "@/assets/images/skills/frontend/nuxt-logo.png";
 import reduxLogo from "@/assets/images/skills/frontend/redux-logo.svg";
+import angularLogo from "@/assets/images/skills/frontend/angular.svg"
 
 export default [
+  {
+    skillName: "Angular",
+    img: angularLogo,
+    yearLearned: 2025
+  },
   {
     skillName: "Redux",
     img: reduxLogo,
@@ -26,11 +32,11 @@ export default [
     img: nextjsLogo,
     yearLearned: 2023,
   },
-  {
-    skillName: "Svelte",
-    img: svelteLogo,
-    yearLearned: 2023,
-  },
+  // {
+  //   skillName: "Svelte",
+  //   img: svelteLogo,
+  //   yearLearned: 2023,
+  // },
   {
     skillName: "Nuxt.js",
     img: nuxtLogo,
@@ -67,7 +73,7 @@ export default [
     yearLearned: 2022,
   },
   {
-    skillName: "Sass",
+    skillName: "Sass (scss)",
     img: SassLogo,
     yearLearned: 2022,
   },

@@ -7,11 +7,20 @@ import snapnoteImage2 from "@/assets/images/projects/snapnote/snapnote2.png"
 
 export default [
   {
+    projectName: "Quick Programming Tests (QPT)",
+    typeOfProject: "Website",
+    description: "Open-source quiz platform built to streamline interview preparation and skill reinforcement. Designed for rapid, focused practice, it enables users to test their knowledge in targeted areas and build confidence through quick, effective learning sessions.",
+    madeWith: "made with angular, sass (scss), nodejs, mongodb, cors, express",
+    url: "https://quick-programming-tests.vercel.app/",
+    gitRepo: "https://github.com/fred-gutierrez/quick-programming-tests"
+  },
+  {
     projectName: "SnapNote",
     typeOfProject: "Extension",
     description:
       "Open-source browser extension designed for fast note-taking during web browsing. Featuring a Notion-like editor powered by BlockNote, it provides a modern interface for rapid and versatile note creation. The extension also supports downloading notes in Markdown, as well as convenient text copying in both regular text and Markdown formats.",
-    madeWith: "made with crxjs, react, typescript, redux, tailwind css and vite",
+    // madeWith: "made with crxjs, react, typescript, redux, tailwind css and vite",
+    madeWith: "made with react, typescript, redux, crxjs, tailwind css and vite",
     url: "https://snapnote-demo.vercel.app/",
     gitRepo: "https://github.com/fred-gutierrez/snapnote",
     chromeUrl:
